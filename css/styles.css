@@ -79,16 +79,24 @@ p {
 .content-container {
   padding: 120px 60px;
 }
-.content-container h1 {
+.content h1 {
   font-size: 50px;
 }
 
-.content-container h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--default-font);
 }
-
+.content h3 {
+  font-size: 24px;
+  font-family: var(--default-font);
+}
+.content p {
+  margin: 0;
+  font-size: 14px;
+}
 .content {
+  margin: 30px;
 }
 img {
   border: solid;
@@ -120,5 +128,8 @@ img {
   .content-container {
     text-align: center;
     padding: 0;
+  }
+  .content p {
+    font-size: 20px;
   }
 }
