@@ -76,6 +76,20 @@ p {
   padding: 120px 60px;
 }
 
+.about-myself {
+  padding: 120px 60px;
+}
+.about-myself h1 {
+  font-size: 50px;
+}
+
+.about-myself h2 {
+  font-size: 18px;
+  font-family: var(--default-font);
+}
+
+.about-section {
+}
 img {
   border: solid;
   border-color: var(--secondary-colour);
@@ -102,5 +116,9 @@ img {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+  .about-myself {
+    text-align: center;
+    padding: 0;
   }
 }
