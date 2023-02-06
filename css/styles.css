@@ -79,8 +79,16 @@ p {
 .content-container {
   padding: 120px 60px;
 }
+.contact-container {
+  text-align: center;
+  padding: 120px 60px;
+}
 .content h1 {
   font-size: 50px;
+}
+
+.contact h1 {
+  font-size: 64ps;
 }
 
 .content h2 {
@@ -90,14 +98,23 @@ p {
 .content h3 {
   font-size: 24px;
   font-family: var(--default-font);
+  line-height: 1.5;
+}
+
+.contact h3 {
+  font-size: 40px;
 }
 .content p {
   margin: 0;
   font-size: 14px;
 }
+.contact p {
+  font-size: 24px;
+}
 .content {
   margin: 30px;
 }
+
 img {
   border: solid;
   border-color: var(--secondary-colour);
@@ -131,5 +148,11 @@ img {
   }
   .content p {
     font-size: 20px;
+  }
+  .contact p {
+    font-size: 20px;
+  }
+  .contact h3 {
+    font-size: 30px;
   }
 }
