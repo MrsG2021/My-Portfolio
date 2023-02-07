@@ -179,8 +179,8 @@ footer .social-link a:hover {
 }
 
 nav {
-  color: white;
   background: var(--branding-color);
+  font-size: large;
 }
 
 img {
