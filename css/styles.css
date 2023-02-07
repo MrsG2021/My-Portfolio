@@ -1,6 +1,6 @@
 :root {
   --branding-color: #118a7e;
-  --primary-color: #93e4c1;
+  --primary-color: white;
   --secondary-colour: #3baea0;
   --heading-font: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
@@ -42,6 +42,21 @@ p {
   line-height: 30px;
 }
 
+a {
+  color: var(--secondary-colour);
+  padding: 10px 14px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
 .hero {
   text-align: center;
   padding: 80px 20px 50px 20px;
@@ -61,7 +76,7 @@ p {
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
-  color: white;
+  color: var(--primary-color);
   font-size: 18px;
   line-height: 12px;
   padding: 15px 30px;
@@ -70,6 +85,15 @@ p {
 .btn-branding-outline {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 12px;
+  padding: 15px 30px;
+}
+
+.btn-footer {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 12px;
@@ -124,8 +148,9 @@ footer {
 }
 
 footer .contact-box {
-  background: var(--secondary-colour);
-  padding: 30px 100px;
+  color: var(--primary-color);
+  background: var(--branding-color);
+  padding: 10px 50px;
   border-radius: 10px;
 }
 
@@ -141,20 +166,15 @@ footer .email-link {
 }
 
 footer .email-link:hover {
-  color: white;
+  color: var(--primary-color);
 }
 
 footer .social-link {
-  margin: 0 20px;
-  color: var(--branding-color);
-  background: var(--secondary-color);
-  padding: 10px 14px;
-  border-radius: 50%;
-  font-size: 30px;
-  transition: all 100ms ease-in-out;
+  font-size: 50px;
 }
+
 footer .social-link a:hover {
-  color: white;
+  color: var(--primary-color);
   background: var(--branding-color);
 }
 
