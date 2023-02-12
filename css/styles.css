@@ -1,7 +1,8 @@
 :root {
-  --branding-color: #118a7e;
+  --branding-color: #0d5c55;
   --primary-color: white;
-  --secondary-colour: #3baea0;
+  --secondary-colour: #13897d;
+  --muted-color: #d8b2a7;
   --heading-font: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
 }
@@ -10,15 +11,16 @@ body {
   font-family: var(--default-font);
   background: radial-gradient(
     circle at 10% 20%,
-    rgb(116, 203, 199) 0%,
-    rgb(220, 246, 200) 90%
+    rgb(19, 137, 126) 0%,
+    rgb(216, 178, 167) 90%
   );
+  color: var(--primary-color);
 }
 
 h1,
 h2,
 h3,
-h4,
+h3,
 h5,
 h6 {
   font-family: var(--heading-font);
@@ -33,7 +35,7 @@ h2 {
   font-size: 64px;
 }
 
-h4 {
+h3 {
   font-size: 48px;
 }
 p {
@@ -43,8 +45,6 @@ p {
 }
 
 a {
-  color: var(--secondary-colour);
-  padding: 10px 14px;
   color: var(--branding-color);
   background: var(--secondary-color);
   padding: 10px 20px;
@@ -54,7 +54,11 @@ a {
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--muted-color);
+}
+
+.text-primary {
+  color: var(--muted-color) !important;
 }
 
 .hero {
@@ -101,7 +105,7 @@ a:hover {
 }
 
 .project-description {
-  padding: 100px 60px;
+  padding: 60px;
 }
 
 .content-container {
@@ -160,13 +164,12 @@ footer .contact-box p {
 
 footer .email-link {
   text-decoration: none;
-  color: var(--secondary-colour);
   font-size: 24px;
   text-align: center;
 }
 
 footer .email-link:hover {
-  color: var(--primary-color);
+  color: var(--muted-color);
 }
 
 footer .social-link {
@@ -174,15 +177,18 @@ footer .social-link {
 }
 
 footer .social-link a:hover {
-  color: var(--primary-color);
+  color: var(--muted-color);
   background: var(--branding-color);
 }
 
 nav {
-  background: var(--branding-color);
+  background: none;
   font-size: large;
 }
 
+.logo {
+  border: none;
+}
 img {
   border: solid;
   border-color: var(--secondary-colour);
@@ -199,7 +205,7 @@ img {
     font-size: 44px;
     margin-bottom: 10px;
   }
-  h4 {
+  h3 {
     font-size: 26px;
   }
   .hero {
